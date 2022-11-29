@@ -71,7 +71,7 @@ public class AdminController {
 
     @PatchMapping("/{id}")
     public String update(@ModelAttribute("user") User user) {
-        userService.udpateUser(user);
+        userService.updateUser(user);
         return "redirect:/admin";
     }
 }
